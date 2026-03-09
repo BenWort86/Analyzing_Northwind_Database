@@ -417,9 +417,6 @@ join
 -- - number of distinct customers
 -- - top-selling product
 -- - top-selling category
-drop view if exists exec_kpi_view;
-
-create or replace view exec_kpi_view as
 with t_order_base as (
     -- Base fact table at order-line level
     select
